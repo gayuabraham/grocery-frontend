@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Sidebar from "../Sidebar/SideBar";
+import Sidebar from "../SideBar/SideBar";
 import { StoreContext } from "../../Context/StoreContext";
 import { FaEye, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import "./CategoryPage.css";
