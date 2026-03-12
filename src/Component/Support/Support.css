@@ -1,0 +1,31 @@
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 8%;
+}
+
+.support > div {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+
+}
+
+.support img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+
+.support h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+
+.support span {
+  font-size: 14px;
+  color: #666;
+}

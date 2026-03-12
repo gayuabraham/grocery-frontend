@@ -1,0 +1,25 @@
+.shop-wrapper {
+  background: #f3f5f0;
+  padding: 40px 0;
+}
+
+.shop-container {
+  max-width: 1300px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 30px;
+  border-right: 1px solid #e5e5e5;
+  background: #fafaf8;
+}
+
+.shop-content {
+  flex: 1;
+  padding: 40px;
+}

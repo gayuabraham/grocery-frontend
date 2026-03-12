@@ -1,0 +1,183 @@
+.meat {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Sidebar + Grid wrapper */
+.shop-section {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Sidebar width */
+.sidebar {
+  width: 280px;
+}
+
+/* Product grid */
+.product-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+/* ================= TOP CATEGORIES ================= */
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.category span {
+  display: block;
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2e2e2e;
+  letter-spacing: 0.5px;
+}
+
+.category:hover img {
+  transform: translateY(-5px);
+}
+
+.category:hover span {
+  color: #4caf50;
+}
+
+/* ================= PRODUCT GRID ================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= IMAGE BOX ================= */
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Second image hidden */
+.img2 {
+  opacity: 0;
+}
+
+/* Hover image swap */
+.image-box:hover .img1 {
+  opacity: 0;
+}
+
+.image-box:hover .img2 {
+  opacity: 1;
+}
+
+/* ================= ICON OVERLAY ================= */
+
+
+/* ICONS ON IMAGE */
+.icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.icon-overlay svg {
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product-card:hover .icon-overlay {
+  opacity: 1;
+}
+
+/* ================= TEXT ================= */
+
+.product-card h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0 12px;
+  min-height: 40px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* ================= CART BUTTON ================= */
+
+.cart-btn {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  color: rgb(1, 0, 0);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}

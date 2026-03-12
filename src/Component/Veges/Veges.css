@@ -1,0 +1,206 @@
+/* ================================
+   MAIN SECTION
+================================ */
+.veges{
+  padding: 90px 8%;
+  background: #fffdf8;
+}
+
+/* Section Heading */
+.veges h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #222;
+  position: relative;
+}
+
+.veges h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #9aff6b;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ================================
+   TOP CATEGORY SECTION
+================================ */
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.category span {
+  display: block;
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2e2e2e;
+  letter-spacing: 0.5px;
+}
+
+.category:hover img {
+  transform: translateY(-5px);
+}
+
+.category:hover span {
+  color: #4caf50;
+}
+
+/* ================================
+   PRODUCT GRID
+================================ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ================================
+   PRODUCT CARD
+================================ */
+.product-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+  text-align: left;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ================================
+   IMAGE BOX
+================================ */
+.image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-box:hover .img1 {
+  opacity: 0;
+}
+
+.image-box:hover .img2 {
+  opacity: 1;
+}
+
+/* ================================
+   ICON OVERLAY
+================================ */
+.icon-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.icon-overlay svg {
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.icon-overlay svg:hover {
+  background: #4caf50;
+  color: white;
+}
+
+.image-box:hover .icon-overlay {
+  opacity: 1;
+}
+
+/* ================================
+   TEXT CONTENT
+================================ */
+.product-card h4 {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.desc {
+  margin: 8px 0 12px;
+  font-size: 14px;
+  color: #6a6a6a;
+  line-height: 1.5;
+  min-height: 42px;
+}
+
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  color: #4caf50;
+}
+
+/* ================================
+   CART BUTTON
+================================ */
+.cart-btn {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  color: rgb(1, 0, 0);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .top-section {
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+}

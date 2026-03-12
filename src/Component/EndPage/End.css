@@ -1,0 +1,32 @@
+.end {
+  position: relative;      /* important for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.end img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+ 
+}
+
+.end-text {
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  text-align: center;
+  color: white;
+  background: rgba(40, 38, 38, 0.5); 
+  padding: 15px 25px;
+  border-radius: 20px;
+ 
+}
+
+.end-text h2 {
+  margin: 5px 0 0 0;
+}

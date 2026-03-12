@@ -1,0 +1,92 @@
+
+.listing-section {
+  padding: 40px 60px;
+  background: #f9f9f9;
+}
+
+/* Title */
+.listing-title {
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #243F2F;
+  margin-bottom: 30px;
+}
+
+/* Wrapper with arrows */
+.listing-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Scroll container */
+.list-item {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  text-decoration: none;
+  color: #444;
+}
+
+.list-item::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each item card */
+.item {
+  min-width: 140px;
+  background: white;
+  padding: 20px 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #444;
+}
+
+/* Image fit properly inside box */
+.item img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;   /* VERY IMPORTANT */
+  margin-bottom: 12px;
+
+}
+
+/* Text below image */
+/* .item span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #243F2F;
+} */
+
+/* Hover effect */
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Arrows */
+.arrow {
+  background: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  margin: 0 10px;
+}
+
+.arrow:hover {
+  background: #243F2F;
+  color: white;
+}

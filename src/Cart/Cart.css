@@ -1,0 +1,150 @@
+/* PAGE */
+
+.cart-page {
+  padding: 50px 8%;
+  background: #fff; /* white background for page */
+  min-height: 80vh;
+}
+
+.cart-page h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #000;
+}
+
+/* CONTAINER */
+
+.cart-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* CART ITEM */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* IMAGE */
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f0f0f0;
+  padding: 5px;
+}
+
+/* PRODUCT INFO */
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.cart-info p {
+  margin-top: 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* QUANTITY */
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+  color: #000;
+}
+
+.qty-box button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.qty-box span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* REMOVE BUTTON */
+
+.remove-btn {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #333;
+}
+
+/* TOTAL SECTION */
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.cart-total h3 {
+  font-size: 22px;
+  color: #000;
+}
+
+/* CHECKOUT */
+
+.checkout-btn {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #333;
+}
+
+/* EMPTY CART */
+
+.empty {
+  color: #555;
+  font-size: 18px;
+  text-align: center;
+  padding: 50px 0;
+}
