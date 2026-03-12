@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Sidebar.css";
+import "./SideBar.css";
 
 const categoriesData = [
   { name: "Baking", value: "baking", sub: [] },
